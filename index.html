@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,23 +27,24 @@
 <body class="bg-brandDark text-gray-200 font-sans antialiased min-h-screen">
 
   <!-- Navigation -->
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-brandCardBorder">
-    <div class="flex items-center space-x-2">
-      <span class="bg-brandYellow text-black font-extrabold text-xl px-2 py-1 rounded">SS</span>
-      <span class="font-bold text-lg tracking-wide text-white">SAYHAM SHOHAN</span>
+  <nav class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-brandCardBorder">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="bg-brandYellow text-black font-extrabold text-xl px-2 py-1 rounded">SS</span>
+        <span class="font-bold text-lg tracking-wide text-white">SAYHAM SHOHAN</span>
+      </div>
+      <div class="hidden md:flex space-x-6 text-sm text-gray-300">
+        <a href="#home" class="hover:text-brandYellow transition">Home</a>
+        <a href="#about" class="hover:text-brandYellow transition">About</a>
+        <a href="#services" class="hover:text-brandYellow transition">Services</a>
+        <a href="#portfolio" class="hover:text-brandYellow transition">Sample Work</a>
+        <a href="#process" class="hover:text-brandYellow transition">Process</a>
+        <a href="#contact" class="hover:text-brandYellow transition">Contact</a>
+      </div>
+      <a href="https://wa.me/8801341827074" target="_blank" class="bg-brandYellow text-black font-semibold text-sm px-4 py-2 rounded-full hover:bg-brandYellowHover transition flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-base"></i> Let's Work Together
+      </a>
     </div>
-    <div class="hidden md:flex space-x-6 text-sm text-gray-300">
-      <a href="#home" class="hover:text-brandYellow transition">Home</a>
-      <a href="#about" class="hover:text-brandYellow transition">About</a>
-      <a href="#services" class="hover:text-brandYellow transition">Services</a>
-      <a href="#portfolio" class="hover:text-brandYellow transition">Portfolio</a>
-      <a href="#process" class="hover:text-brandYellow transition">Process</a>
-      <a href="#tools" class="hover:text-brandYellow transition">Tools</a>
-      <a href="#contact" class="hover:text-brandYellow transition">Contact</a>
-    </div>
-    <a href="#contact" class="bg-brandYellow text-black font-semibold text-sm px-4 py-2 rounded-full hover:bg-brandYellowHover transition flex items-center gap-2">
-      Let's Work Together <i class="fa-solid fa-arrow-right text-xs"></i>
-    </a>
   </nav>
 
   <!-- Hero Section -->
@@ -52,41 +53,49 @@
       <p class="text-brandYellow italic font-medium mb-2">Hello, I'm</p>
       <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">SAYHAM SHOHAN</h1>
       <h2 class="text-xl md:text-2xl text-gray-300 font-medium mb-4">
-        Social Media Specialist / Digital Marketer / Growth Marketer / Freelancer
+        Social Media Specialist / Growth Marketer / Freelancer
       </h2>
       <p class="text-gray-400 mb-6 leading-relaxed max-w-lg">
-        Helping businesses build stronger social media presence, create better content, and grow organically.
+        Helping E-commerce clothing brands, local cafes, and small businesses build stronger social media presence on Facebook and Instagram to grow organically.
       </p>
       
       <!-- Contact Quick Info -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-gray-300 mb-6">
-        <div class="flex items-center gap-2 bg-brandCard p-2 rounded border border-brandCardBorder">
+        <div class="flex items-center gap-2 bg-brandCard p-2.5 rounded border border-brandCardBorder">
           <i class="fa-solid fa-location-dot text-brandYellow"></i> Bangladesh (GMT+6)
         </div>
-        <div class="flex items-center gap-2 bg-brandCard p-2 rounded border border-brandCardBorder">
+        <a href="mailto:officialsayham1@gmail.com" class="flex items-center gap-2 bg-brandCard p-2.5 rounded border border-brandCardBorder hover:border-brandYellow transition">
           <i class="fa-solid fa-envelope text-brandYellow"></i> officialsayham1@gmail.com
-        </div>
-        <div class="flex items-center gap-2 bg-brandCard p-2 rounded border border-brandCardBorder">
-          <i class="fa-solid fa-phone text-brandYellow"></i> +880 1341-827074
-        </div>
-        <div class="flex items-center gap-2 bg-brandCard p-2 rounded border border-brandCardBorder">
-          <i class="fa-brands fa-linkedin text-brandYellow"></i> in/sayham-shohan-59a348435
-        </div>
+        </a>
+        <a href="https://wa.me/8801341827074" target="_blank" class="flex items-center gap-2 bg-brandCard p-2.5 rounded border border-brandCardBorder hover:border-brandYellow transition">
+          <i class="fa-brands fa-whatsapp text-brandYellow"></i> +880 1341-827074
+        </a>
+        <a href="https://www.linkedin.com/in/sayham-shohan-59a348435" target="_blank" class="flex items-center gap-2 bg-brandCard p-2.5 rounded border border-brandCardBorder hover:border-brandYellow transition truncate">
+          <i class="fa-brands fa-linkedin text-brandYellow"></i> sayham-shohan
+        </a>
       </div>
 
-      <!-- Social Links -->
+      <!-- Social Media Buttons -->
       <div class="flex space-x-3">
-        <a href="#" class="w-9 h-9 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow transition"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" class="w-9 h-9 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow transition"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="w-9 h-9 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow transition"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/officialsayham1" target="_blank" class="w-10 h-10 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow hover:border-brandYellow transition">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/sayham.shohan1" target="_blank" class="w-10 h-10 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow hover:border-brandYellow transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sayham-shohan-59a348435" target="_blank" class="w-10 h-10 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow hover:border-brandYellow transition">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://wa.me/8801341827074" target="_blank" class="w-10 h-10 bg-brandCard border border-brandCardBorder rounded-full flex items-center justify-center text-gray-300 hover:text-brandYellow hover:border-brandYellow transition">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
       </div>
     </div>
 
-    <!-- Hero Image Placeholder -->
+    <!-- Profile Photo -->
     <div class="relative flex justify-center">
-      <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-brandCard border border-brandCardBorder overflow-hidden relative shadow-2xl flex items-center justify-center">
-        <!-- Replace src below with your profile photo URL -->
-        <img src="https://via.placeholder.com/400x400?text=Profile+Photo" alt="Sayham Shohan" class="w-full h-full object-cover">
+      <div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-brandCard border border-brandCardBorder overflow-hidden relative shadow-2xl">
+        <img src="profile.jpg" alt="Sayham Shohan" class="w-full h-full object-cover">
       </div>
     </div>
   </section>
@@ -97,13 +106,13 @@
     <div class="bg-brandCard p-8 rounded-2xl border border-brandCardBorder">
       <h3 class="text-2xl font-bold text-white mb-4">About Me</h3>
       <p class="text-gray-400 text-sm leading-relaxed mb-4">
-        Hi, I'm Sayham Shohan, a Social Media Specialist, Digital Marketer, and Growth Marketer focused on helping startups, small businesses, content creators, and e-commerce brands improve their online presence.
+        Hi, I'm Sayham Shohan, a Social Media Specialist and Growth Marketer focused on helping apparel online stores, local cafes, and small businesses grow their digital footprint.
       </p>
       <p class="text-gray-400 text-sm leading-relaxed mb-6">
-        I work primarily with Facebook, Instagram, and YouTube, combining content strategy, social media management, SEO, optimization, and organic growth techniques.
+        I specialize in Facebook and Instagram optimization, content scheduling, audience targeting, and engaging post copywriting designed to turn followers into loyal customers.
       </p>
       <div class="bg-brandDark p-4 rounded-xl border border-brandCardBorder text-xs text-brandYellow text-center font-medium">
-        Create the right content &rarr; Reach the right audience &rarr; Build trust &rarr; Grow consistently
+        Target Right Audience &rarr; Consistent Content &rarr; Build Trust &rarr; Organic Sales Growth
       </div>
     </div>
 
@@ -114,106 +123,133 @@
         <div class="p-4 bg-brandDark rounded-xl border border-brandCardBorder">
           <i class="fa-solid fa-bullhorn text-brandYellow text-xl mb-2"></i>
           <h4 class="font-bold text-white text-sm">Social Media Management</h4>
-          <p class="text-xs text-gray-400 mt-1">Content planning, scheduling, engagement, analytics & more.</p>
+          <p class="text-xs text-gray-400 mt-1">Full content scheduling, engagement, and profile management for FB & IG.</p>
         </div>
         <div class="p-4 bg-brandDark rounded-xl border border-brandCardBorder">
           <i class="fa-solid fa-lightbulb text-brandYellow text-xl mb-2"></i>
           <h4 class="font-bold text-white text-sm">Content Strategy</h4>
-          <p class="text-xs text-gray-400 mt-1">Content pillars, calendars, ideas, and brand storytelling.</p>
+          <p class="text-xs text-gray-400 mt-1">Monthly content calendars, Reels concepts, and brand storytelling.</p>
         </div>
         <div class="p-4 bg-brandDark rounded-xl border border-brandCardBorder">
           <i class="fa-solid fa-pen-nib text-brandYellow text-xl mb-2"></i>
-          <h4 class="font-bold text-white text-sm">Content Writing</h4>
-          <p class="text-xs text-gray-400 mt-1">Captions, posts, SEO content, YouTube titles & descriptions.</p>
+          <h4 class="font-bold text-white text-sm">Caption & Copywriting</h4>
+          <p class="text-xs text-gray-400 mt-1">Engaging social captions, hashtags, and call-to-action post copy.</p>
         </div>
         <div class="p-4 bg-brandDark rounded-xl border border-brandCardBorder">
           <i class="fa-solid fa-chart-line text-brandYellow text-xl mb-2"></i>
-          <h4 class="font-bold text-white text-sm">Organic Growth Strategy</h4>
-          <p class="text-xs text-gray-400 mt-1">Audience research, consistency, engagement & long-term growth.</p>
+          <h4 class="font-bold text-white text-sm">Page Optimization</h4>
+          <p class="text-xs text-gray-400 mt-1">Complete profile audit, bio setup, CTA links, and custom branding.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- My Process -->
+  <!-- Process Section -->
   <section id="process" class="max-w-7xl mx-auto px-6 py-12">
-    <h3 class="text-2xl font-bold text-white mb-8 text-center">My Process</h3>
+    <h3 class="text-2xl font-bold text-white mb-8 text-center">My Growth Process</h3>
     <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">01</span>
         <h4 class="text-sm font-semibold text-white mt-1">Discover</h4>
+        <p class="text-[11px] text-gray-400 mt-1">Brand Audit</p>
       </div>
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">02</span>
         <h4 class="text-sm font-semibold text-white mt-1">Strategize</h4>
+        <p class="text-[11px] text-gray-400 mt-1">Content Plan</p>
       </div>
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">03</span>
         <h4 class="text-sm font-semibold text-white mt-1">Create</h4>
+        <p class="text-[11px] text-gray-400 mt-1">Posts & Captions</p>
       </div>
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">04</span>
         <h4 class="text-sm font-semibold text-white mt-1">Optimize</h4>
+        <p class="text-[11px] text-gray-400 mt-1">SEO & Hashtags</p>
       </div>
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">05</span>
         <h4 class="text-sm font-semibold text-white mt-1">Publish</h4>
+        <p class="text-[11px] text-gray-400 mt-1">Peak Scheduling</p>
       </div>
       <div class="p-4 bg-brandCard rounded-xl border border-brandCardBorder">
         <span class="text-brandYellow font-bold text-lg">06</span>
         <h4 class="text-sm font-semibold text-white mt-1">Analyze</h4>
+        <p class="text-[11px] text-gray-400 mt-1">Growth Review</p>
       </div>
     </div>
   </section>
 
-  <!-- Sample Work / Portfolio -->
+  <!-- Sample Work / Industry Case Studies -->
   <section id="portfolio" class="max-w-7xl mx-auto px-6 py-12">
     <div class="flex justify-between items-center mb-8">
-      <h3 class="text-2xl font-bold text-white">Sample Work</h3>
-      <span class="text-xs bg-yellow-500/10 text-brandYellow border border-brandYellow/30 px-3 py-1 rounded-full">Practice & Portfolio Projects</span>
+      <h3 class="text-2xl font-bold text-white">Sample Case Studies</h3>
+      <span class="text-xs bg-yellow-500/10 text-brandYellow border border-brandYellow/30 px-3 py-1 rounded-full">Target Industry Concepts</span>
     </div>
-    <div class="grid md:grid-cols-4 gap-6">
-      <div class="bg-brandCard rounded-xl border border-brandCardBorder overflow-hidden">
-        <div class="h-40 bg-gray-800 flex items-center justify-center text-gray-500">Project Image 1</div>
-        <div class="p-4">
-          <h4 class="font-bold text-white text-sm">Social Media Page Optimization</h4>
-          <p class="text-xs text-gray-400 mt-1">Profile setup, bio development & visual direction.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Clothing E-Commerce -->
+      <div class="bg-brandCard rounded-xl border border-brandCardBorder p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <i class="fa-solid fa-shirt text-brandYellow text-lg"></i>
+            <span class="text-xs text-brandYellow font-semibold">E-Commerce Clothing</span>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2">30-Day Instagram Growth & Carousel Strategy</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Designed a seasonal collection launch plan, styling tip carousels, and strategic hashtag clusters to boost organic engagement and shop visits.
+          </p>
         </div>
+        <span class="text-[10px] bg-brandDark text-gray-300 border border-brandCardBorder px-2.5 py-1 rounded w-fit">Strategy & Copywriting</span>
       </div>
-      <div class="bg-brandCard rounded-xl border border-brandCardBorder overflow-hidden">
-        <div class="h-40 bg-gray-800 flex items-center justify-center text-gray-500">Project Image 2</div>
-        <div class="p-4">
-          <h4 class="font-bold text-white text-sm">Content Strategy & Calendar</h4>
-          <p class="text-xs text-gray-400 mt-1">Audience research, content pillars & monthly planning.</p>
+
+      <!-- Local Cafe -->
+      <div class="bg-brandCard rounded-xl border border-brandCardBorder p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <i class="fa-solid fa-mug-hot text-brandYellow text-lg"></i>
+            <span class="text-xs text-brandYellow font-semibold">Local Cafe & Bakery</span>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2">Facebook Business Page Setup & Foot-Traffic Campaign</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Full profile setup with menu highlights, automated messenger replies for booking inquiries, and local geo-tagged post planning.
+          </p>
         </div>
+        <span class="text-[10px] bg-brandDark text-gray-300 border border-brandCardBorder px-2.5 py-1 rounded w-fit">Page Optimization</span>
       </div>
-      <div class="bg-brandCard rounded-xl border border-brandCardBorder overflow-hidden">
-        <div class="h-40 bg-gray-800 flex items-center justify-center text-gray-500">Project Image 3</div>
-        <div class="p-4">
-          <h4 class="font-bold text-white text-sm">YouTube Growth Strategy</h4>
-          <p class="text-xs text-gray-400 mt-1">Channel optimization, SEO & Shorts ideas.</p>
+
+      <!-- Small Business -->
+      <div class="bg-brandCard rounded-xl border border-brandCardBorder p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <i class="fa-solid fa-store text-brandYellow text-lg"></i>
+            <span class="text-xs text-brandYellow font-semibold">Small Business</span>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2">Social Brand Audit & Copywriting Kit</h4>
+          <p class="text-xs text-gray-400 leading-relaxed mb-4">
+            Drafted high-converting social media bios, custom call-to-action buttons, and a 15-post promotional copy calendar.
+          </p>
         </div>
-      </div>
-      <div class="bg-brandCard rounded-xl border border-brandCardBorder overflow-hidden">
-        <div class="h-40 bg-gray-800 flex items-center justify-center text-gray-500">Project Image 4</div>
-        <div class="p-4">
-          <h4 class="font-bold text-white text-sm">Instagram Content Strategy</h4>
-          <p class="text-xs text-gray-400 mt-1">Content pillars, Reels ideas, captions & hashtags.</p>
-        </div>
+        <span class="text-[10px] bg-brandDark text-gray-300 border border-brandCardBorder px-2.5 py-1 rounded w-fit">Audit & Copywriting</span>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Call to Action -->
+  <!-- Contact Section -->
   <section id="contact" class="max-w-7xl mx-auto px-6 py-12">
     <div class="bg-gradient-to-r from-brandCard to-brandDark border border-brandCardBorder rounded-2xl p-8 md:p-12 text-center">
       <h3 class="text-3xl font-bold text-white mb-4">Let's Build Something Great</h3>
       <p class="text-gray-400 text-sm max-w-md mx-auto mb-6">
-        Have a brand, page, channel or business that needs a stronger digital presence? Let's work together.
+        Ready to take your Facebook or Instagram page to the next level? Get in touch today for a free initial page review.
       </p>
-      <a href="mailto:officialsayham1@gmail.com" class="inline-block bg-brandYellow text-black font-bold px-8 py-3 rounded-full hover:bg-brandYellowHover transition">
-        Get In Touch &rarr;
-      </a>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://wa.me/8801341827074" target="_blank" class="bg-brandYellow text-black font-bold px-6 py-3 rounded-full hover:bg-brandYellowHover transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+        </a>
+        <a href="mailto:officialsayham1@gmail.com" class="bg-brandDark text-white border border-brandCardBorder font-bold px-6 py-3 rounded-full hover:border-brandYellow transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-envelope text-lg"></i> Send Email
+        </a>
+      </div>
     </div>
   </section>
 
